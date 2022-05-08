@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: ingress-nginx
-    targetRevision: main
+    targetRevision: feature/ingress-nginx
   syncPolicy: 
     automated:
       prune: true
