@@ -11,8 +11,8 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: glauth
-    targetRevision: main
+    targetRevision: feature/implement-glauth
   syncPolicy: 
     automated:
-      prune: true
+      prune: true 
       selfHeal: false
