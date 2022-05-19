@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: authentik
+  name: postgresql
   namespace: argo-cd
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
   project: default 
   source: 
     repoURL: https://github.com/tombulled/argo-charts
-    path: authentik
+    path: postgresql
     targetRevision: feature/implement-authentika
   syncPolicy: 
     automated:
