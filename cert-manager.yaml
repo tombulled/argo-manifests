@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: cert-manager
-    targetRevision: main
+    targetRevision: feature/cert-manager
   syncPolicy: 
     automated:
       prune: true
