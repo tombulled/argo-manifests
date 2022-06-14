@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana-2
+  namespace: argo-cd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default 
+  source: 
+    repoURL: https://github.com/tombulled/argo-charts
+    path: grafana-2
+    targetRevision: feature/cert-manager
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: false
