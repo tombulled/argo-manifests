@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: homer
-    targetRevision: main
+    targetRevision: feature/uptime-kuma
   syncPolicy: 
     automated:
       prune: true
