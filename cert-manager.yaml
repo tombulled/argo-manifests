@@ -5,13 +5,13 @@ metadata:
   namespace: argo-cd
 spec:
   destination:
-    namespace: default
+    namespace: cert-manager
     server: https://kubernetes.default.svc
   project: default 
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: cert-manager
-    targetRevision: main
+    targetRevision: feature/rancher
   syncPolicy: 
     automated:
       prune: true
