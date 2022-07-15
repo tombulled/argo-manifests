@@ -5,7 +5,7 @@ metadata:
   namespace: argo-cd
 spec:
   destination:
-    namespace: common
+    namespace: default
     server: https://kubernetes.default.svc
   project: default 
   source: 
@@ -15,4 +15,4 @@ spec:
   syncPolicy: 
     automated:
       prune: true
-      selfHeal: false
+      selfHeal: true

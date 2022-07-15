@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cyber-chef
+  name: step-certificates
   namespace: argo-cd
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
   project: default 
   source: 
     repoURL: https://github.com/tombulled/argo-charts
-    path: cyber-chef
+    path: step-certificates
     targetRevision: main
   syncPolicy: 
     automated:
