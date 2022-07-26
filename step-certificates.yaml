@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: step-certificates
-    targetRevision: bugfix/rancher-not-available
+    targetRevision: develop
   syncPolicy: 
     automated:
       prune: true
