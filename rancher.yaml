@@ -5,7 +5,7 @@ metadata:
   namespace: argo-cd
 spec:
   destination:
-    namespace: default
+    namespace: cattle-system
     server: https://kubernetes.default.svc
   project: default 
   source: 
