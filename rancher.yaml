@@ -5,13 +5,13 @@ metadata:
   namespace: argo-cd
 spec:
   destination:
-    namespace: default
+    namespace: cattle-system
     server: https://kubernetes.default.svc
   project: default 
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: rancher
-    targetRevision: main
+    targetRevision: bugfix/rancher-not-available
   syncPolicy: 
     automated:
       prune: true
