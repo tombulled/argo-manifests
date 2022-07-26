@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/tombulled/argo-charts
     path: rancher
-    targetRevision: develop
+    targetRevision: main
   syncPolicy: 
     automated:
       prune: true
