@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cert-issuer
+  name: cert-issuer-ca
   namespace: argo-cd
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
   project: default 
   source: 
     repoURL: https://github.com/tombulled/argo-charts
-    path: cert-issuer
+    path: cert-issuer-ca
     targetRevision: main
   syncPolicy: 
     automated:
