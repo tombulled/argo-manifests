@@ -10,6 +10,9 @@ echo
 echo "[+] Installing: Certificate Issuer (cert-issuer)"
 kubectl apply -f ../cert-issuer.yaml
 echo
+echo "[+] Installing: Trust Manager (trust-manager)"
+kubectl apply -f ../trust-manager.yaml
+echo
 
 # Services
 # echo "[+] Installing: Gitmoji (gitmoji)"
