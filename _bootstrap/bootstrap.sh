@@ -7,8 +7,11 @@ echo
 echo "[+] Installing: Certificate Manager (cert-manager)"
 kubectl apply -f ../cert-manager.yaml
 echo
-echo "[+] Installing: Certificate Issuer (cert-issuer)"
+echo "[+] Installing: Certificate Issuer - Self-Signed (cert-issuer)"
 kubectl apply -f ../cert-issuer.yaml
+echo
+echo "[+] Installing: Certificate Issuer - CA (cert-issuer-ca)"
+kubectl apply -f ../cert-issuer-ca.yaml
 echo
 echo "[+] Installing: Trust Manager (trust-manager)"
 kubectl apply -f ../trust-manager.yaml
